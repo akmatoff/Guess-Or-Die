@@ -1,34 +1,9 @@
 import java.util.Scanner;
 
-import java.io.File;
 import java.io.PrintWriter;
-import java.io.FileNotFoundException;
+import java.io.FileWriter;
 
 public class Authorize {
-
-    private static void loginForm() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("---------- Авторизация ----------");
-        System.out.println("Введите логин: ");
-        String login = scanner.nextLine();
-        System.out.println("Введите пароль: ");
-        String password = scanner.nextLine();
-
-        try {
-            PrintWriter pw = new PrintWriter(new File("Z:\\Programming\\Java\\Guess-Or-Die\\src\\users.csv"));
-            StringBuilder sb = new StringBuilder();
-
-            sb.append(login);
-            sb.append(";");
-            sb.append(password);
-
-            pw.append(sb.toString());
-            pw.close();
-
-        } catch (Exception e) {
-            System.out.print("Syntax error: Baichik\'s brain not found!");
-        }
-    }
 
     private static void registerForm() {
         Scanner scanner = new Scanner(System.in);
@@ -39,18 +14,22 @@ public class Authorize {
         String password = scanner.nextLine();
 
         try {
-            PrintWriter pw = new PrintWriter(new File("Z:\\Programming\\Java\\Guess-Or-Die\\src\\users.csv"));
-            StringBuilder sb = new StringBuilder();
+            FileWriter fw = new FileWriter("users.csv", true);
+            PrintWriter pw = new PrintWriter(fw);
 
-            sb.append(login);
-            sb.append(";");
-            sb.append(password);
-            sb.append("\n");
+            pw.append(login);
+            pw.append(";");
+            pw.append(password);
+            pw.append("\n");
 
-            pw.append(sb.toString());
             pw.close();
+
         } catch (Exception e) {
+            System.out.print("Syntax error: Baichik\'s brain not found!");
         }
+    }
+
+    private static void loginForm() {
     }
 
     public static void main(String[] args) {

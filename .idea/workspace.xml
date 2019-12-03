@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0ba765-7f63-40a3-bced-624fde5b2ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Authorize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authorize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/users.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,6 +71,7 @@
       <workItem from="1574765619383" duration="447000" />
       <workItem from="1574849663915" duration="2167000" />
       <workItem from="1575270407194" duration="4234000" />
+      <workItem from="1575362652210" duration="1799000" />
     </task>
     <servers />
   </component>
