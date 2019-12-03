@@ -18,7 +18,7 @@ public class Authorize {
             PrintWriter pw = new PrintWriter(fw);
 
             pw.append(login);
-            pw.append(";");
+            pw.append(",");
             pw.append(password);
             pw.append("\n");
 
@@ -30,6 +30,14 @@ public class Authorize {
     }
 
     private static void loginForm() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("---------- Авторизация ----------");
+        System.out.println("Введите логин: ");
+        String login = scanner.nextLine();
+        System.out.println("Введите пароль: ");
+        String password = scanner.nextLine();
+
+
     }
 
     public static void main(String[] args) {
