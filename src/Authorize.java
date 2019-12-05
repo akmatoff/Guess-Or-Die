@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 import java.io.PrintWriter;
 import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Authorize {
 
@@ -53,7 +57,8 @@ public class Authorize {
                 registerForm();
                 break;
             default:
-                System.out.println("Введите 1 или 2!");
+                System.out.print("Введите 1 для авторизации, 2 для регистрации: ");
+                authReg = scanner.nextInt();
         }
     }
 }
