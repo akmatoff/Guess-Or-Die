@@ -2,10 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-<<<<<<< HEAD
-
-}
-=======
     public static void main(String[] agrs) {
             Random rand = new Random();
             Scanner scanner = new Scanner(System.in);
@@ -44,4 +40,3 @@ public class Main {
         }
     }
 
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
