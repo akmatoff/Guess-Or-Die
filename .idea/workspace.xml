@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6e0ba765-7f63-40a3-bced-624fde5b2ff7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Authorize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authorize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Authorize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authorize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,27 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
-=======
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
   <component name="ProjectId" id="1U9DdTFhGqio6vqlboHy7aKmGEM" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-<<<<<<< HEAD
-=======
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -62,14 +53,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-<<<<<<< HEAD
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Authorize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Authorize" />
-=======
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
       <module name="JavaLabWork2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -77,11 +69,8 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-        <item itemvalue="Application.Authorize" />
-=======
         <item itemvalue="Application.Main" />
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
+        <item itemvalue="Application.Authorize" />
       </list>
     </recent_temporary>
   </component>
@@ -96,15 +85,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574760004683</updated>
       <workItem from="1574760007941" duration="77000" />
-<<<<<<< HEAD
       <workItem from="1574765619383" duration="447000" />
       <workItem from="1574849663915" duration="2167000" />
       <workItem from="1575270407194" duration="4234000" />
       <workItem from="1575362652210" duration="4096000" />
-=======
       <workItem from="1574849629155" duration="2804000" />
       <workItem from="1575269754814" duration="4331000" />
->>>>>>> 57a86f7250b5008c987f855bc054dccbd54dd957
     </task>
     <servers />
   </component>
