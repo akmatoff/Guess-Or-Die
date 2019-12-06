@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 import java.io.PrintWriter;
 import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
 
 public class Authorize {
 
@@ -41,7 +42,29 @@ public class Authorize {
         System.out.println("Введите пароль: ");
         String password = scanner.nextLine();
 
+        try {
+            File file = new File("users.csv");
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
 
+
+            String line;
+            String[] row = {};
+            while ((line = br.readLine()) != null) {
+                row = line.split(",");
+                if (login.equals(row[0]) && password.equals(row[1])) {
+                    System.out.println("Добро пожаловать, " + login + " !");
+                    break;
+                }
+            }
+            if (!password.equals(row[1])) {
+                System.out.println("Неверный логин или пароль! Повторите попытку!");
+                loginForm();
+            }
+            br.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
