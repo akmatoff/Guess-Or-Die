@@ -17,20 +17,28 @@ public class Authorize {
         String login = scanner.nextLine();
         System.out.println("Введите пароль: ");
         String password = scanner.nextLine();
+        System.out.println("Введите пароль еще раз для подтверждения: ");
+        String confirm = scanner.nextLine();
 
-        try {
-            FileWriter fw = new FileWriter("users.csv", true);
-            PrintWriter pw = new PrintWriter(fw);
+        if (confirm.equals(password)) {
+            try {
+                FileWriter fw = new FileWriter("users.csv", true);
+                PrintWriter pw = new PrintWriter(fw);
 
-            pw.append(login);
-            pw.append(",");
-            pw.append(password);
-            pw.append("\n");
+                pw.append(login);
+                pw.append(",");
+                pw.append(password);
+                pw.append("\n");
 
-            pw.close();
+                pw.close();
 
-        } catch (Exception e) {
-            System.out.print("Syntax error: Baichik\'s brain not found!");
+            } catch (Exception e) {
+                System.out.print("Syntax error: Baichik\'s brain not found!");
+            }
+
+        } else {
+            System.out.println("Пароли не совпадают! Повторите попытку!");
+            registerForm();
         }
     }
 
@@ -46,7 +54,6 @@ public class Authorize {
             File file = new File("users.csv");
             FileReader fileReader = new FileReader(file);
             BufferedReader br = new BufferedReader(fileReader);
-
 
             String line;
             String[] row = {};
