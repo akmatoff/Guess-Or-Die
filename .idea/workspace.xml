@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0ba765-7f63-40a3-bced-624fde5b2ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Colors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Authorize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authorize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +27,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
   <component name="ProjectId" id="1U9DdTFhGqio6vqlboHy7aKmGEM" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -39,6 +37,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Java\Guess-Or-Die\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,7 +55,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Authorize">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Authorize (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Authorize" />
+      <module name="JavaLabWork2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Authorize (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Authorize" />
+      <module name="JavaLabWork2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Authorize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Authorize" />
       <module name="JavaLabWork2" />
@@ -69,8 +86,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Authorize" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Authorize (2)" />
+        <item itemvalue="Application.Authorize (1)" />
+        <item itemvalue="Application.Authorize" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +110,7 @@
       <workItem from="1575362652210" duration="4096000" />
       <workItem from="1574849629155" duration="2804000" />
       <workItem from="1575269754814" duration="4331000" />
-      <workItem from="1575639225322" duration="847000" />
+      <workItem from="1575639225322" duration="4527000" />
     </task>
     <servers />
   </component>

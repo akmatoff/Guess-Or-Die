@@ -10,6 +10,20 @@ import java.io.File;
 
 public class Authorize {
 
+    private static void authOrReg() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите " + Colors.GREEN_BOLD + "1 " + Colors.RESET + "для авторизации, " + Colors.CYAN_BOLD + "2 " + Colors.RESET + "для регистрации: ");
+        int authReg = scanner.nextInt();
+
+        if (authReg == 1) {
+            loginForm();
+        } else if (authReg == 2) {
+            registerForm();
+        } else {
+            authOrReg();
+        }
+    }
+
     private static void registerForm() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------- Регистрация ----------");
@@ -37,7 +51,7 @@ public class Authorize {
             }
 
         } else {
-            System.out.println("Пароли не совпадают! Повторите попытку!");
+            System.out.println(Colors.RED + "Пароли не совпадают! Повторите попытку!" + Colors.RESET);
             registerForm();
         }
     }
@@ -59,13 +73,14 @@ public class Authorize {
             String[] row = {};
             while ((line = br.readLine()) != null) {
                 row = line.split(",");
+
                 if (login.equals(row[0]) && password.equals(row[1])) {
-                    System.out.println("Добро пожаловать, " + login + " !");
+                    System.out.println(Colors.GREEN + "Добро пожаловать, " + Colors.RESET + Colors.PURPLE + login + "!" + Colors.RESET);
                     break;
                 }
             }
-            if (!password.equals(row[1])) {
-                System.out.println("Неверный логин или пароль! Повторите попытку!");
+            if (!login.equals(row[0]) || !password.equals(row[1])) {
+                System.out.println(Colors.RED + "Неверный логин или пароль! Повторите попытку!" + Colors.RESET);
                 loginForm();
             }
             br.close();
@@ -74,21 +89,7 @@ public class Authorize {
         }
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите 1 для авторизации, 2 для регистрации: ");
-        int authReg = scanner.nextInt();
-
-        switch (authReg) {
-            case 1:
-                loginForm();
-                break;
-            case 2:
-                registerForm();
-                break;
-            default:
-                System.out.print("Введите 1 для авторизации, 2 для регистрации: ");
-                authReg = scanner.nextInt();
-        }
+    public static void auth(String[] args) {
+        authOrReg();
     }
 }
