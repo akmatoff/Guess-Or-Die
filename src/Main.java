@@ -1,6 +1,10 @@
 import java.util.Random;
 import java.util.Scanner;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
 public class Main {
     public static void main(String[] args) {
             Authorize.auth(args);
@@ -53,6 +57,19 @@ public class Main {
                 System.out.println(Colors.RED + "Вы проиграли! Попробуйте ещё раз!" + Colors.RESET);
             }
             System.out.println(Colors.BLUE + "Ваш результат: " + Colors.RESET + Colors.PURPLE + score + Colors.RESET + Colors.BLUE + " баллов" + Colors.RESET);
+
+            try {
+                FileWriter fw = new FileWriter("results.csv", true);
+                PrintWriter pw = new PrintWriter(fw);
+
+                pw.append(Authorize.login);
+                pw.append(",");
+                pw.append(Authorize.password);
+
+                pw.close();
+            } catch (Exception e) {
+                System.out.println("ERROR!");
+            }
         }
     }
 

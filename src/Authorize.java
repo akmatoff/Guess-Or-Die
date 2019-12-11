@@ -9,6 +9,20 @@ import java.io.IOException;
 import java.io.File;
 
 public class Authorize {
+    String login;
+    String password;
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+    public Authorize() {
+        Scanner scanner = new Scanner(System.in);
+        login = scanner.nextLine();
+        password = scanner.nextLine();
+    }
 
     private static void authOrReg() {
         Scanner scanner = new Scanner(System.in);
@@ -28,9 +42,10 @@ public class Authorize {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------- Регистрация ----------");
         System.out.println("Введите логин: ");
-        String login = scanner.nextLine();
+        Authorize authorize = new Authorize();
+        authorize.getLogin();
         System.out.println("Введите пароль: ");
-        String password = scanner.nextLine();
+        authorize.getPassword();
         System.out.println("Введите пароль еще раз для подтверждения: ");
         String confirm = scanner.nextLine();
 
