@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0ba765-7f63-40a3-bced-624fde5b2ff7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Authorize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Colors.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Colors.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaLabWork2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLabWork2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Authorize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authorize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +28,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1U9DdTFhGqio6vqlboHy7aKmGEM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -39,18 +48,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programming\Java\Guess-Or-Die\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Authorize (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -90,6 +87,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -127,5 +136,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576164221997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576164221997" />
+    <state width="1877" height="596" key="GridCell.Tab.0.bottom" timestamp="1576171904566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="596" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576171904566" />
+    <state width="1877" height="596" key="GridCell.Tab.0.center" timestamp="1576171904566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="596" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576171904566" />
+    <state width="1877" height="596" key="GridCell.Tab.0.left" timestamp="1576171904566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="596" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576171904566" />
+    <state width="1877" height="596" key="GridCell.Tab.0.right" timestamp="1576171904566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="596" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576171904566" />
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1576164205071">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576164205071" />
   </component>
 </project>

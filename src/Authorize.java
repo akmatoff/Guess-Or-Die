@@ -3,28 +3,22 @@ import java.util.Scanner;
 import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.FileNotFoundException;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.File;
 
 public class Authorize {
-    String login;
-    String password;
+    public static String login;
+    public static String password;
+
+    public Authorize() {
+        login = this.getLogin();
+    }
+
     public String getLogin() {
         return login;
     }
 
-    public String getPassword() {
-        return password;
-    }
-    public Authorize() {
-        Scanner scanner = new Scanner(System.in);
-        login = scanner.nextLine();
-        password = scanner.nextLine();
-    }
-
-    private static void authOrReg() {
+    static void authOrReg() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите " + Colors.GREEN_BOLD + "1 " + Colors.RESET + "для авторизации, " + Colors.CYAN_BOLD + "2 " + Colors.RESET + "для регистрации: ");
         int authReg = scanner.nextInt();
@@ -38,14 +32,13 @@ public class Authorize {
         }
     }
 
-    private static void registerForm() {
+    static void registerForm() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------- Регистрация ----------");
         System.out.println("Введите логин: ");
-        Authorize authorize = new Authorize();
-        authorize.getLogin();
+        login = scanner.nextLine();
         System.out.println("Введите пароль: ");
-        authorize.getPassword();
+        password = scanner.nextLine();
         System.out.println("Введите пароль еще раз для подтверждения: ");
         String confirm = scanner.nextLine();
 
@@ -71,13 +64,13 @@ public class Authorize {
         }
     }
 
-    private static void loginForm() {
+    static void loginForm() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------- Авторизация ----------");
         System.out.println("Введите логин: ");
-        String login = scanner.nextLine();
+        login = scanner.nextLine();
         System.out.println("Введите пароль: ");
-        String password = scanner.nextLine();
+        password = scanner.nextLine();
 
         try {
             File file = new File("users.csv");
