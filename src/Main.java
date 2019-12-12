@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
@@ -56,7 +55,7 @@ public class Main {
         } else {
             System.out.println(Colors.RED + "Вы проиграли! Попробуйте ещё раз!" + Colors.RESET);
         }
-        System.out.println(Colors.BLUE + "Ваш результат: " + Colors.RESET + Colors.PURPLE + score + Colors.RESET + Colors.BLUE + " баллов" + Colors.RESET);
+        System.out.println(Colors.BLUE + "Ваш результат: " + Colors.RESET + Colors.PURPLE + score + Colors.RESET + " баллов");
 
 
         Authorize auth = new Authorize();
@@ -76,6 +75,8 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Не удалось записать результаты!");
         }
+
+        Results.showResults();
+
     }
 }
-
