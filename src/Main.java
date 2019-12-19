@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 public class Main {
 
     public static void main(String[] args) {
-        Authorize.auth(args);
+        Authorize.authOrReg();
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
         int num = 1;
@@ -50,17 +50,30 @@ public class Main {
             }
         }
 
-        if (score >= 25) {
-            System.out.println(Colors.GREEN + "Поздравляю, вы победили!" + Colors.RESET);
+        Authorize auth = new Authorize();
+        String login = auth.getLogin();
+        String scoreToString = "" + score;
+
+        if (score == 30) {
+            System.out.println(Colors.GREEN + "Поздравляем, вы победили и попали в список лидеров!" + Colors.RESET);
+            try {
+                FileWriter fw = new FileWriter("leaders.csv", true);
+                PrintWriter pw = new PrintWriter(fw);
+
+                pw.append(login);
+                pw.append(",");
+                pw.append(scoreToString);
+                pw.append("\n");
+
+                pw.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("Не удалось записать результаты!");
+            }
         } else {
             System.out.println(Colors.RED + "Вы проиграли! Попробуйте ещё раз!" + Colors.RESET);
         }
         System.out.println(Colors.BLUE + "Ваш результат: " + Colors.RESET + Colors.PURPLE + score + Colors.RESET + " баллов");
-
-
-        Authorize auth = new Authorize();
-        String login = auth.getLogin();
-        String scoreToString = "" + score;
 
         try {
             FileWriter fw = new FileWriter("results.csv", true);

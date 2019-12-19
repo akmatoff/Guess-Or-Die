@@ -1,3 +1,5 @@
+import java.awt.event.InputEvent;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import java.io.PrintWriter;
@@ -21,14 +23,21 @@ public class Authorize {
     static void authOrReg() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите " + Colors.GREEN_BOLD + "1 " + Colors.RESET + "для авторизации, " + Colors.CYAN_BOLD + "2 " + Colors.RESET + "для регистрации: ");
-        int authReg = scanner.nextInt();
 
-        if (authReg == 1) {
-            loginForm();
-        } else if (authReg == 2) {
-            registerForm();
-        } else {
-            authOrReg();
+
+        try {
+            int authReg = scanner.nextInt();
+            if (authReg == 1) {
+                loginForm();
+            } else if (authReg == 2) {
+                registerForm();
+            } else {
+                System.out.println(Colors.RED + "Ошибка: принимает только цифры 1 или 2!" + Colors.RESET);
+                authOrReg();
+            }
+        } catch (InputMismatchException e) {
+            System.out.println(Colors.RED + "Ошибка: Введите число 1 или 2!" + Colors.RESET);
+            System.exit(0);
         }
     }
 
@@ -41,26 +50,47 @@ public class Authorize {
         password = scanner.nextLine();
         System.out.println("Введите пароль еще раз для подтверждения: ");
         String confirm = scanner.nextLine();
-
-        if (confirm.equals(password)) {
-            try {
-                FileWriter fw = new FileWriter("users.csv", true);
-                PrintWriter pw = new PrintWriter(fw);
-
-                pw.append(login);
-                pw.append(",");
-                pw.append(password);
-                pw.append("\n");
-
-                pw.close();
-
-            } catch (Exception e) {
-                System.out.print("Syntax error: Baichik\'s brain not found!");
-            }
-
-        } else {
+        if (!confirm.equals(password)) {
             System.out.println(Colors.RED + "Пароли не совпадают! Повторите попытку!" + Colors.RESET);
             registerForm();
+        }
+
+        try {
+            File file = new File("users.csv");
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
+
+            String line;
+            String[] row = {};
+            while ((line = br.readLine()) != null) {
+                row = line.split(",");
+                while (login.equals(row[0])) {
+                    System.out.println(Colors.RED + "Пользователь уже существует! Авторизуйтесь или введите другой логин!" + Colors.RESET);
+                    authOrReg();
+                }
+            }
+            if (!login.equals(row[0])) {
+                System.out.println(Colors.GREEN + "Добро пожаловать, " + Colors.RESET + Colors.PURPLE + login + "!" + Colors.RESET);
+                System.out.println(Colors.GREEN + "Регистрация прошла успешно!" + Colors.RESET);
+                try {
+                    FileWriter fw = new FileWriter("users.csv", true);
+                    PrintWriter pw = new PrintWriter(fw);
+
+                    pw.append(login);
+                    pw.append(",");
+                    pw.append(password);
+                    pw.append("\n");
+
+                    pw.close();
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            br.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -97,7 +127,4 @@ public class Authorize {
         }
     }
 
-    public static void auth(String[] args) {
-        authOrReg();
-    }
 }
